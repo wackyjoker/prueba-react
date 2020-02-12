@@ -1,0 +1,30 @@
+#second-nav {
+	float: left;
+
+	a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media only screen and(max-width: 992px) {
+	#second-nav {
+		a {
+			display: flex;
+			flex-direction: row;
+			svg {
+				margin-right: 1em;
+			}
+		}
+	}
+}
+
+.carousel {
+	background: gray;
+	img {
+		margin: auto;
+		height: 40vh;
+		min-height: 240px;
+	}
+}
