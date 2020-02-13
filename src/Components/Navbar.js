@@ -5,7 +5,7 @@ import { FaUserAlt, FaShoppingBag, FaLanguage } from 'react-icons/fa';
 
 const MainNavbar = () => {
 	return (
-		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+		<Navbar collapseOnSelect expand="lg" variant="dark">
 			<Navbar.Brand href="#home">
 				<img src={logo} className="App-logo" alt="logo" />
 			</Navbar.Brand>
@@ -18,19 +18,20 @@ const MainNavbar = () => {
 					<Nav.Link href="#features">Features</Nav.Link>
 					<Nav.Link href="#pricing">Pricing</Nav.Link>
 				</Nav>
-				{/*      nav derecha         */}
-				<Nav id="second-nav">
-					<Nav.Link href="#Lang">
-						<FaLanguage /> Language
-					</Nav.Link>
-					<Nav.Link href="#USER">
-						<FaUserAlt /> User
-					</Nav.Link>
-					<Nav.Link eventKey={2} href="#UNID">
-						<FaShoppingBag />5 UND
-					</Nav.Link>
-				</Nav>
 			</Navbar.Collapse>
+			{/*      nav derecha         */}
+			<Nav id="second-nav">
+				<Nav.Link href="#language" className="lang">
+					<FaLanguage /> <span>Language</span>
+				</Nav.Link>
+				<Nav.Link href="#user">
+					<FaUserAlt /> <span id="user">User</span>
+				</Nav.Link>
+				<Nav.Link eventKey={2} href="#unid">
+					<FaShoppingBag />
+					<span id="unit">5 UND</span>
+				</Nav.Link>
+			</Nav>
 		</Navbar>
 	);
 };

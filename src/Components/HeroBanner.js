@@ -2,34 +2,31 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
 class HeroBanner extends React.Component {
+	constructor() {
+		super();
+		this.states = [
+			{
+				title: 'First slide label',
+				alt: 'First slide',
+				url: 'https://via.placeholder.com/640x240'
+			},
+			{ title: 'Second slide label', alt: 'Second slide', url: 'https://via.placeholder.com/640x240' },
+			{ title: 'Third slide label', alt: 'Third slide', url: 'https://via.placeholder.com/640x240' }
+		];
+	}
 	render() {
-		return (
-			<Carousel>
-				<Carousel.Item>
-					<img className="d-block" src="https://via.placeholder.com/640x240" alt="First slide" />
+		const content = this.states.map((item, index) => {
+			return (
+				<Carousel.Item key={index}>
+					<img className="d-block w-auto" src={item.url} alt={item.alt} />
 					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						<h3>{item.title}</h3>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item>
-					<img className="d-block" src="https://via.placeholder.com/640x240" alt="Third slide" />
+			);
+		});
 
-					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img className="d-block" src="https://via.placeholder.com/640x240" alt="Third slide" />
-
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-			</Carousel>
-		);
+		return <Carousel>{content}</Carousel>;
 	}
 }
 

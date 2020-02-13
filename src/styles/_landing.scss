@@ -1,6 +1,11 @@
-
 .App-logo {
-    height: 10vmin;
-    pointer-events: none;
-  }
-  
+	height: 15vmin;
+	pointer-events: none;
+}
+*:focus {
+	outline: 0 !important;
+}
+body {
+	font-weight: 500;
+	box-sizing: border-box;
+}
