@@ -1,9 +1,12 @@
 .navbar {
+	position: fixed !important;
+	width: 100%;
+	z-index: 9999;
 	background: linear-gradient(
 		90deg,
-		rgba(77, 228, 206, 1) 0%,
-		rgba(60, 188, 212, 1) 47%,
-		rgba(51, 174, 209, 0.9136029411764706) 93%
+		rgba(3, 147, 185, 1) 0%,
+		rgba(26, 90, 215, 1) 49%,
+		rgba(7, 61, 111, 0.9248074229691877) 100%
 	) !important;
 	-webkit-text-stroke: 0.5px white;
 	a {
@@ -48,10 +51,10 @@
 
 .carousel {
 	-webkit-text-stroke: 0.5px black;
-	background: #5bb9ff;
+	background: #e1e9ee;
 	img {
 		overflow: hidden;
-		margin: auto;
+		margin: 200px auto auto;
 		max-width: 100%;
 		height: 320px;
 	}

@@ -6,7 +6,6 @@
 	height: 100vh;
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
-	z-index: -1;
 	position: relative;
 	background-size: cover;
 	&:after {
@@ -21,5 +20,38 @@
 		left: 0;
 		right: 0;
 		width: 100%;
+	}
+}
+
+.edificio {
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	img {
+		width: 60%;
+		min-width: 700px;
+		float: right;
+	}
+}
+
+.plane {
+	z-index: 100;
+	position: absolute;
+	img {
+		width: 80%;
+		right: 20;
+	}
+}
+
+.palla-text {
+	z-index: 11;
+	background: white;
+	width: 100%;
+	height: 200px;
+	p {
+		z-index: 11;
+		font-size: 3em;
+		color: grey;
+		text-align: center;
 	}
 }
