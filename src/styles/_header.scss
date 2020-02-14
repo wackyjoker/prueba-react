@@ -1,75 +1,76 @@
 .navbar {
-	position: fixed !important;
-	width: 100%;
-	z-index: 9999;
-	background: linear-gradient(
-		90deg,
-		rgba(3, 147, 185, 1) 0%,
-		rgba(26, 90, 215, 1) 49%,
-		rgba(7, 61, 111, 0.9248074229691877) 100%
-	) !important;
-	-webkit-text-stroke: 0.5px white;
-	a {
-		&:hover {
-			border-left: solid #2a4052;
-		}
-	}
+  position: fixed !important;
+  width: 100%;
+  z-index: 9999;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 147, 185, 1) 0%,
+    rgba(26, 90, 215, 1) 49%,
+    rgba(7, 61, 111, 0.9248074229691877) 100%
+  ) !important;
+  -webkit-text-stroke: 0.5px white;
+  a {
+    &:hover {
+      border-left: solid #2a4052;
+    }
+  }
 }
 
 #second-nav {
-	float: left;
-	a {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+  float: left;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media only screen and(max-width: $mDevice) {
-	.navbar-toggler {
-		position: absolute;
-		left: 20px;
-	}
-	.navbar-brand {
-		margin-left: 41% !important;
-	}
-	#second-nav {
-		#user,
-		#unit,
-		.lang {
-			display: none;
-		}
-		a {
-			display: flex;
-			flex-direction: row;
-			svg {
-				margin-right: 1em;
-			}
-		}
-	}
+  .navbar-toggler {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .navbar-brand {
+    margin-left: 41% !important;
+  }
+  #second-nav {
+    #user,
+    #unit,
+    .lang {
+      display: none;
+    }
+    a {
+      display: flex;
+      flex-direction: row;
+      svg {
+        margin-right: 1em;
+      }
+    }
+  }
 }
 
 .carousel {
-	-webkit-text-stroke: 0.5px black;
-	background: #e1e9ee;
-	img {
-		overflow: hidden;
-		margin: 200px auto auto;
-		max-width: 100%;
-		height: 320px;
-	}
+  -webkit-text-stroke: 0.5px black;
+  background: #e1e9ee;
+  img {
+    overflow: hidden;
+    margin: 200px auto auto;
+    max-width: 100%;
+    height: 320px;
+  }
 }
 
 #card-container {
-	width: 80%;
-	padding: 0.5rem;
-	margin: 2em auto;
-	min-height: 420px;
+  width: 80%;
+  padding: 0.5rem;
+  margin: 2em auto;
+  min-height: 420px;
 }
 .react-multi-carousel-list {
-	position: static;
-	.react-multi-carousel-dot-list {
-		position: relative;
-		margin-left: 50%;
-	}
+  position: static;
+  .react-multi-carousel-dot-list {
+    position: relative;
+    margin-left: 50%;
+  }
 }
