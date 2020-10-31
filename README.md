@@ -1,4 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A react app made in Sunday for a code-interview
+for more information visit https://prueba-app-react.herokuapp.com/
+
+tech used: <br/>
+
+`HTML` `React` `Sass/SCSS` `Webpack` `Node.js`
 
 ## Available Scripts
 
